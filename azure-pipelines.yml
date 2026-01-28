@@ -4,7 +4,7 @@ trigger:
       - dev   # pipeline triggers only on dev branch
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows-selfhosted-pool'
 
 steps:
 - script: |
