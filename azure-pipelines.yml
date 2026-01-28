@@ -1,0 +1,15 @@
+trigger:
+  branches:
+    include:
+      - dev   # pipeline triggers only on dev branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+    echo "Pipeline triggered from GitHub dev branch"
+    echo "Listing files:"
+    ls -l
+  displayName: 'Run sample script'
+
