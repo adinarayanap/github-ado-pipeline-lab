@@ -4,7 +4,8 @@ trigger:
       - dev   # pipeline triggers only on dev branch
 
 pool:
-  vmImage: 'windows-selfhosted-pool'
+  name: windows-selfhosted-pool
+
 
 steps:
 - script: |
