@@ -1,16 +1,15 @@
 trigger:
   branches:
     include:
-      - dev   # pipeline triggers only on dev branch
+      - dev
 
 pool:
   name: windows-selfhosted-pool
 
-
 steps:
 - script: |
-    echo "Pipeline triggered from GitHub dev branch"
-    echo "Listing files:"
-    ls -l
-  displayName: 'Run sample script'
+    echo Pipeline triggered from GitHub dev branch
+    echo Listing files:
+    dir
+  displayName: 'Run sample script (Windows)'
 
